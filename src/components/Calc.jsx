@@ -16,10 +16,10 @@ const Calc = () => {
   return(
     <>
     Input 1:
-    <input onChange={ e => setInput1(e.target.value)} type="number"/>
+    <input onChange={ e => setInput1(Number(e.target.value))} />
     <br/>
     Input 2:
-    <input onChange={ e => setInput2(e.target.value)} type="number"/>
+    <input onChange={ e => setInput2(Number(e.target.value))} />
     <br/>
     <button onClick={() => dispatch( add( {input1, input2} ))}>
       +
