@@ -16,20 +16,21 @@ const Calc = () => {
   return(
     <>
     Input 1:
-    <input onChange={ e => setInput1(e.target.value)}/>
-    Input 2:
-    <input onChange={ e => setInput2(e.target.value)}/>
+    <input onChange={ e => setInput1(e.target.value)} type="number"/>
     <br/>
-    <button onClick={() => dispatch( add( input1, input2 ))}>
+    Input 2:
+    <input onChange={ e => setInput2(e.target.value)} type="number"/>
+    <br/>
+    <button onClick={() => dispatch( add( {input1, input2} ))}>
       +
     </button>
-    <button onClick={() => dispatch( div( input1, input2 ))}>
+    <button onClick={() => dispatch( div( {input1, input2} ))}>
       /
     </button>
-    <button onClick={() => dispatch( mult( input1, input2))}>
+    <button onClick={() => dispatch( mult( {input1, input2} ))}>
       X
     </button>
-    <button onClick={() => dispatch( sub( input1, input2))}>
+    <button onClick={() => dispatch( sub( {input1, input2} ))}>
       -
     </button>
     Result : { result.total }
