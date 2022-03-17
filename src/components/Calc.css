@@ -1,0 +1,30 @@
+.container {
+  width: 390px;
+  height: 890px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 4rem;
+  overflow: auto;
+  margin: 15px 15px;
+}
+button {
+  background-color: chartreuse;
+  height: 30px;
+  width: 30px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  flex: 1;
+  box-shadow: inset 5px 5px 12px #222, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+
+button:hover {
+  background-color: #222;
+  color: chartreuse;
+}
